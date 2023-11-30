@@ -565,3 +565,6 @@ body {
   transform: translateY(-50%);
   fill: #2E2F42;
 }
+.modal-field{
+  margin: 8px;
+}
