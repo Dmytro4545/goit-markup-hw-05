@@ -537,34 +537,38 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <div class="textarea">
             <label class="modal-label" for="user-comment">Comment</label>
-            <div class="modal-box textarea">
-              <textarea
-                class="user-comment modal-label"
-                id="user-comment"
-                name="user-comment"
-                cols="30"
-                rows="10"
-                placeholder="Text-input"
-                required
-              ></textarea>
-            </div>
+            <textarea
+              class="comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text-input"
+              required
+            ></textarea>
           </div>
-
-          <div class="modal-field">
-            <label class="modal-label ml-checkbox" for="user-checkbox"
-              >I accept the terms and conditions of the
-              <span class="modal-checkbox">Privacy Policy</span></label
-            >
+          <div class="modal-checkbox">
             <input
-              class="checkbox"
+              class="checkbox visually-hidden"
               id="user-checkbox"
               name="user-checkbox"
               type="checkbox"
               value="true"
               required
             />
+            <label class="modal-label ml-checkbox" for="user-checkbox"
+              ><span class="check-on">
+                <svg
+                  class="check-icon"
+                  width="10"
+                  height="8"
+                  aria-label="check-icon"
+                >
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="color" href="">Privacy Policy</a></label
+            >
           </div>
           <button class="submit-btn" type="submit">Send</button>
         </form>
